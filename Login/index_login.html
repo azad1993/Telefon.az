@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <script type="text/javascript" src="javascript_login.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Giriş formu</h2>
+
+  <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+     
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Mobil nömrə</b></label>
+      <input type="text" placeholder="+99450......." name="uname" required>
+  
+      <label for="psw"><b>Sms kod</b></label>
+      <input type="password" placeholder="Kodu daxil edin" name="psw" required>
+          
+      <button type="submit">Giriş</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Yaddaşa yaz
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn"><a href="../indexmain.html" style="color: white;">Çıxış</a></button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+</body>
+</html>

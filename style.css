@@ -1,0 +1,68 @@
+*{
+  text-decoration: none;
+}
+
+
+
+.w3-sidebar a {
+    font-family: "Roboto", sans-serif
+}
+
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+    font-family: "Montserrat", sans-serif;
+}
+/*Search buttonu */
+
+    input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    }
+
+  input[type=text]:focus {
+    width: 80%;
+  }
+  input[type=text]:hover{
+   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.4s ease-in-out;
+    border-color: black;
+    
+  }
+
+  .btn {
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(46, 44, 44);
+    color: white;
+    width: 100px;
+    display: inline-block;
+    
+  }
+  .btn:hover{
+       
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: box-shadow 0.4s ease-in-out;
+   border-color: black;
+   
+  }
+  .w3-container1:hover{
+        
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: box-shadow 0.4s ease-in-out;
+   
+  }
+
+  
