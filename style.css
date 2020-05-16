@@ -1,5 +1,6 @@
 *{
   text-decoration: none;
+ 
 }
 
 
@@ -11,10 +12,10 @@
 body,h1,h2,h3,h4,h5,h6,.w3-wide {
     font-family: "Montserrat", sans-serif;
 }
-/*Search buttonu */
+/*Search buttonu yuxarıdakı */
 
-    input[type=text] {
-    width: 130px;
+    input[type=text], input[type=number] {
+    width: 150px; position: relative;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -23,19 +24,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
     background-image: url('searchicon.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 5px 20px 5px 40px;
+    padding: 5px 20px 5px 10px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     }
 
   input[type=text]:focus {
-    width: 80%;
+    width: 254%;
+    
   }
-  input[type=text]:hover{
+  input[type=text]:hover, input[type=number]:hover{
    
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: box-shadow 0.4s ease-in-out;
     border-color: black;
+    
     
   }
 
@@ -51,18 +54,133 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
     display: inline-block;
     
   }
-  .btn:hover{
+  .btn2{
+    height: 40px;
+    background-color: rgb(46, 44, 44);
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn:hover, .btn2:hover{
        
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    transition: box-shadow 0.4s ease-in-out;
    border-color: black;
    
   }
+  .w3-container{
+    line-height: 1.6 ;
+  }
+  
   .w3-container1:hover{
         
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    transition: box-shadow 0.4s ease-in-out;
    
+   
   }
 
+  /*Search_advanced*/
+
+  .dropbtn1 {
+    background-color: white;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto;
+    padding: 5px 20px 5px 40px;
+    background-color: white;
+    cursor: pointer;
+    
+  }
+
+  .dropbtn1:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: box-shadow 0.4s ease-in-out;
+   border-color: black;
+
+  }
   
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    line-height: 1.6 ;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .InputWithIcon i{
+    position: absolute;
+    left: 0;
+    padding: 9px 8px;
+  }
+
+  /* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 100px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 222px;
+    margin-left: 5px ;
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    width: 3.100rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+   }
+   .form-control:focus {
+    width: 222px !important;
+ }
+
+   .form-group  {
+     display: inline-block ;
+
+   }
+
+   .search_advanced2{
+    background-color: #f0f2f7;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+   }
+
