@@ -8,8 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico' rel='stylesheet' type='text/css'>
 
+<script src="jquery-3.5.1.min.js"></script>
 <link rel="stylesheet" href="Login/index_login.html">
+
 <script type="text/javascript" src="javascript.js"></script>
 
 <body class="w3-content" style="max-width:1200px">
@@ -96,7 +99,7 @@
         <i class="fa fa-search"></i>
       </p>
       <p class="w3-right">
-        <button class="btn"><a href="Login/index_login.html">Giriş</button>
+        <button class="btn" style="width: 106px;"><a href="Login/index_login.html">Giriş</button>
       </p>
     </header>
     <header class="w3-container w3-large">
@@ -106,27 +109,26 @@
         <input class="dropbtn1" placeholder="Bütün kateqoriyalar">
         
         <div class="dropdown-content" style="left:0;">
-          <a href="*">Link 1</a>
-          <a href="*">Link 2</a>
-          <a href="*">Link 3</a>
+          <a href="*">Telefonlar</a>
+          <a href="*">Telefon hissələri</a>
         </div>
       </div>
       <div class="button" style="float:right;">
 
-        <button class="btn">Axtar</button>
+        <button class="btn" style="width: 107px;">Axtar</button>
       </div>
       <div class="form-group has-search">
         <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Axtar..">
       </div>
       
       <div class="dropdown" style="float:right;">
         <input  class="dropbtn1" placeholder="Şəhəri daxil edin">
         
         <div class="dropdown-content" style="left:0;">
-          <a href="*">Link 1</a>
-          <a href="*">Link 2</a>
-          <a href="*">Link 3</a>
+          <a href="*">Bakı</a>
+          <a href="*">Sumqayıt</a>
+          <a href="*">Gəncə</a>
         </div>
       </div>
       <br>
@@ -137,8 +139,8 @@
             <div class="input range-row">
               <br>
               <label class="title" style="margin-left: 10px;">Qiymət</label>
-              <label class="currency" style="margin-left: 306px;">Valyuta</label>
-              <label class="component" style="margin-left: 193px;">Vəziyyəti</label>
+              <label class="currency" style="margin-left: 316px;">Valyuta</label>
+              <label class="component" style="margin-left: 198px;">Vəziyyəti</label>
             </div>
             <span class="input range-row">
               <span class="min_price" style="margin-left: 10px;">
@@ -151,52 +153,48 @@
           </span>
           <span class="currency">
             
-              <span class="controll-row radio" style="margin-left: 60px;">
+              <span class="toggle" style="margin-left: 60px;">
               <span class="radio_button">
                 <input type="radio" class="filter-controll__input" name="currency" id="AZN" checked="">
-                <label class="filter-controll__radio-label" for="AZN">AZN</label>
+                <label class="filter-controll__radio-label" for="choice1">AZN</label>
               </span>
               <span class="radio_button">
                 <input type="radio" class="filter-controll__input" name="currency" id="USD">
-                <label class="filter-controll__radio-label" for="USD">USD</label>
+                <label class="filter-controll__radio-label" for="choice2">USD</label>
               </span>
+              
             </span>
-          </span>
-          <span class="component" style="margin-left: 138px;">
-            <span class="controll-row">
-              <span class="control-wrapper">
-                <span class="control-wrapper">
-                  <span>
-                    <button class="btn1" placeholder="Vəziyyəti" >
-                    <img src="images/pointing.png" width="10px" height="10px" style="margin-left: 226px; z-index: 3;">
-                  </span>
-                </span>
-              </span>
+          
+            <span class="veziyyeti" style="margin-left: 130px;">
+            <select id="select2" class="cusDD_arrow">
+              <option>Yeni</option>
+              <option>İşlənmiş</option>
+              
+            </select>
+            
             </span>
             
-          </div>
+          
           
          <div class="chatdir" style="margin-left: 10px;">
           <br>
            Çatdırılma
          </div>
           <div class="delivery" style="margin-left: 10px;">
-            <span class="controll-row2">
-              <span class="control-wrapper2">
-                <span class="control-wrapper2">
-                  <span>
-                    <button class="btn1" placeholder="Vəziyyəti" >
-                    <img src="images/pointing.png" width="10px" height="10px" style="margin-left: 200px; z-index: 3;">
-                  </span>
-                </span>
-              </span>
-            </span>
+            <span class="cusDD_select" >
+              <select id="select2" class="cusDD_arrow">
+              <option>Çatdırılma ilə</option>
+              <option>Metrolara Çatdırılma</option>
+              <option>Pulsuz çatdırılma</option>
+              <option>Ödənişli çatdırılma</option>
+              </select>
           </div>
           <div class="goster">
             <button type="button" class="btn2" style="width: 27.5%; margin-left: 71%;" >Göstər</button>
           </div>
           <br>
           
+        </div>
         </div>
         <br>
        
@@ -318,7 +316,7 @@
 
                 <div class="w3-col s4 w3-justify">
                   <h4>Mağaza</h4>
-                  <p><i class=.has-search"fa fa-fw fa-map-marker"></i> NANOTEL</p>
+                  <p><i class="fa fa-fw fa-map-marker"></i> NANOTEL</p>
                   <p><i class="fa fa-fw fa-phone"></i> +994 55 888 99 99</p>
                   <p><i class="fa fa-fw fa-envelope"></i> nano@mail.com</p>
                   <h4>Ödəniş növləri</h4>
