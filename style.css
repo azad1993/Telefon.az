@@ -150,7 +150,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
 
 .has-search .form-control {
     padding-left: 2.375rem;
-    width: 222px;
+    width: 297px;
     margin-left: 5px ;
     
 }
@@ -168,7 +168,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
     
    }
    .form-control:focus {
-    width: 222px !important;
+    width: 222px ;
  }
 
    .form-group  {
@@ -186,9 +186,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
    /*Dropdown style*/
 
    body {
-    font-family: 'Pacifico', cursive;
-    
-    background: url("https://static.tumblr.com/3029b4d9b205bad97eb210b3725bb329/xk2mmfq/5fWn3hnc3/tumblr_static_3119999-545079-abstract-light-blue-hand-drawn-pattern-waves-background-seamless-pattern-can-be-used-for-wallpaper-pattern-fills-web-page-background-surface-textures.jpg") repeat;
+       font-family: 'Allerta Stencil', sans-serif;
+       background: url("https://static.tumblr.com/3029b4d9b205bad97eb210b3725bb329/xk2mmfq/5fWn3hnc3/tumblr_static_3119999-545079-abstract-light-blue-hand-drawn-pattern-waves-background-seamless-pattern-can-be-used-for-wallpaper-pattern-fills-web-page-background-surface-textures.jpg") repeat;
     
   }
 
