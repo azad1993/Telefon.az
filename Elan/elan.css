@@ -1,0 +1,20 @@
+*:hover{
+    text-decoration: none !important;
+}
+a {
+    color: black;
+    
+}
+a:hover{
+    color: black;
+
+}
+
+body {
+    font-family: 'Allerta Stencil', sans-serif;
+    background: url("https://static.tumblr.com/3029b4d9b205bad97eb210b3725bb329/xk2mmfq/5fWn3hnc3/tumblr_static_3119999-545079-abstract-light-blue-hand-drawn-pattern-waves-background-seamless-pattern-can-be-used-for-wallpaper-pattern-fills-web-page-background-surface-textures.jpg") repeat;
+ 
+}
+h1,h2,h4,p,div,nav,tr{
+ font-family: 'Allerta Stencil', sans-serif;
+}

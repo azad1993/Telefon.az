@@ -21,7 +21,7 @@
   <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <h3 class="w3-wide"><b>NANOTEL</b></h3>
+      <h3 class="w3-wide"><a href="indexmain.html"><b>NANOTEL</b></a></h3>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 
@@ -101,6 +101,9 @@
       <p class="w3-right">
         <button class="btn" style="width: 106px;"><a href="Login/index_login.html">Giriş</button>
       </p>
+      <p class="w3-right">
+        <button class="btn" style="width: 150px;"><a href="Elan/elan.html">Elanı yerləşdirin</button>
+      </p>
     </header>
     <header class="w3-container w3-large">
     <form class="search_advanced">
@@ -119,7 +122,7 @@
       </div>
       <div class="form-group has-search">
         <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" class="form-control" placeholder="Axtar..">
+        <input type="text" id="ikinci_axtar" class="form-control" placeholder="Axtar..">
       </div>
       
       <div class="dropdown" style="float:right;">
@@ -139,7 +142,7 @@
             <div class="input range-row">
               <br>
               <label class="title" style="margin-left: 10px;">Qiymət</label>
-              <label class="currency" style="margin-left: 310px;">Valyuta</label>
+              <label class="currency" style="margin-left: 268px;">Valyuta</label>
               <label class="component" style="margin-left: 188px;">Vəziyyəti</label>
             </div>
             <span class="input range-row">
@@ -215,40 +218,40 @@
             </div>
 
             <!-- Məhsullar -->
-            <div class="w3-row w3-grayscale">
-              <div class="w3-col l3 s6">
+            <div class="w3-row w3-grayscale" >
+              <div class="w3-col l3 s6" style="margin-right: 92px;">
                 <div class="w3-container1"><a href="Details/details.html">
                   <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p> Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                  <p class="details_p"> Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
                   </a>
                 </div>
                 <div class="w3-container1">
                   <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                  <p class="details_p">Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
                 </div>
               </div>
 
-              <div class="w3-col l3 s6">
+              <div class="w3-col l3 s6" style="margin-right: 92px;">
                 <div class="w3-container1">
                   <div class="w3-display-container">
                     <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
                     <span class="w3-tag w3-display-topleft">Yeni</span>
                     <div class="w3-display-middle w3-display-hover">
-                      <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                      <button class="w3-button w3-black">Indi al <i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </div>
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                  <p class="details_p">Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
                 </div>
                 <div class="w3-container1">
                   <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                  <p class="details_p">Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
                 </div>
               </div>
 
               <div class="w3-col l3 s6">
                 <div class="w3-container1">
                   <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                  <p class="details_p">Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
                 </div>
                 <div class="w3-container1">
                   <div class="w3-display-container">
@@ -258,20 +261,11 @@
                       <button class="w3-button w3-black">Indi al <i class="fa fa-shopping-cart"></i></button>
                     </div>
                   </div>
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b class="w3-text-dark">800 AZN</b></p>
+                  <p class="details_p">Apple iPhone 11 Pro Max 256GB<br><b class="w3-text-dark">800 AZN</b></p>
                 </div>
               </div>
 
-              <div class="w3-col l3 s6">
-                <div class="w3-container1">
-                  <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
-                </div>
-                <div class="w3-container1">
-                  <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
-                  <p>Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
-                </div>
-              </div>
+              
             </div>
 
             <!-- İzlə bölməsi -->
@@ -296,8 +290,8 @@
                         style="width:100%" required></p>
                     <p><input class="w3-input w3-border" type="text" placeholder="Başlıq" name="Subject"
                         style="width:100%" required></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Mesaj" name="Message"
-                        style="width:100%; height: 100px;" required></p>
+                    <p><textarea class="w3-input w3-border" type="text" placeholder="Mesaj" name="Message"
+                        style="width:100%; font-size: 16px; height: 100px;" required></textarea></p>
                     <button type="submit" class="w3-button w3-block w3-black">Göndər</button>
                   </form>
                 </div>

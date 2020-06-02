@@ -3,18 +3,14 @@
  
 }
 
-
-
-.w3-sidebar a {
-    font-family: "Roboto", sans-serif
+.w3-container1{
+  width: 275px;
 }
 
-body,h1,h2,h3,h4,h5,h6,.w3-wide {
-    font-family: "Montserrat", sans-serif;
-}
+
 /*Search buttonu yuxarıdakı */
 
-    input[type=text], input[type=number] {
+ input[type=text],.input[type=number] {
     width: 150px; position: relative;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -29,10 +25,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
     transition: width 0.4s ease-in-out;
     }
 
-  input[type=text]:focus {
-    width: 700px;
+    
+    
+    input[type=text]:focus {
+    width: 620px;
     
   }
+  
   input[type=text]:hover, input[type=number]:hover{
    
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -40,6 +39,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
     border-color: black;
     
     
+  }
+  textarea:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.4s ease-in-out;
+    border-color: black;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    
+
   }
 
   .btn {
@@ -189,6 +197,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {
        font-family: 'Allerta Stencil', sans-serif;
        background: url("https://static.tumblr.com/3029b4d9b205bad97eb210b3725bb329/xk2mmfq/5fWn3hnc3/tumblr_static_3119999-545079-abstract-light-blue-hand-drawn-pattern-waves-background-seamless-pattern-can-be-used-for-wallpaper-pattern-fills-web-page-background-surface-textures.jpg") repeat;
     
+  }
+  h1,h4,p,div,nav{
+    font-family: 'Allerta Stencil', sans-serif;
   }
 
 
