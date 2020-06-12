@@ -18,3 +18,24 @@ body {
 h1,h2,h4,p,div,nav,tr{
  font-family: 'Allerta Stencil', sans-serif;
 }
+
+.Elan_form{
+    background-image: linear-gradient(to bottom right, rgb(159, 159, 241, 0.5), rgb(247, 0, 255, 0.5));
+}
+
+input[type=text],input[type=number],.cusDD_arrow{
+    width: 200px ;
+    height: 30px;
+    border-radius: 4px;
+}
+
+button{
+    border-radius: 4px;
+    border-color: thistle;
+    font-size: 20px;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.4s ease-in-out;
+    border-color: black;
+}
