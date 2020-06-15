@@ -1,13 +1,14 @@
-*:hover{
-    text-decoration: none !important;
-}
-a {
-    color: black;
-    
-}
-a:hover{
-    color: black;
 
+
+*{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:none;
+    color: black;
+}
+a{
+    color: black;
 }
 
 body {
@@ -33,9 +34,22 @@ button{
     border-radius: 4px;
     border-color: thistle;
     font-size: 20px;
+    border: 2px solid #ccc;
 }
 button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: box-shadow 0.4s ease-in-out;
     border-color: black;
+}
+
+ 
+@media only screen and (max-width: 600px) {
+
+   
+    select, input{
+        width: 100% !important;
+    }
+    .fa {
+        padding-right: 4px !important;
+      }
 }

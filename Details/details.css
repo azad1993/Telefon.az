@@ -161,3 +161,22 @@ table {
       background: white;
   }
  
+  @media only screen and (max-width: 600px) {
+
+    .all_data{
+        padding: 0 0 !important;
+    }
+    .table_first{
+        
+        width: 220px;
+    }
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 40px !important;
+        width: 100px !important;
+        height: 40px;
+  }
+  .fa {
+    padding-right: 4px !important;
+  }
+}
+   

@@ -13,11 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="elan.css">
-<script src="jquery-3.5.1.min.js"></script>
 
-
-<script type="text/javascript" src="javascript.js"></script>
-<script type="text/javascript" src="elan.js"></script>
 
 <body class="w3-content" style="max-width:1200px;">
 
@@ -30,7 +26,7 @@
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 
       <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        Kompüterlər <i class="fa fa-caret-down"></i>
+        Mobil telefonlar <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
@@ -44,7 +40,7 @@
       </div>
 
       <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        Planşetlər <i class="fa fa-caret-down"></i>
+        Aksessuarlar <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
@@ -55,23 +51,15 @@
         <a href="#" class="w3-bar-item w3-button">Samsung</a>
 
       </div>
-      <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        Telefonlar <i class="fa fa-caret-down"></i>
-      </a>
-      <div id="demoAc3" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-            class="fa fa-caret-right w3-margin-right"></i>Hamısı</a>
-        <a href="#" class="w3-bar-item w3-button">Apple</a>
-        <a href="#" class="w3-bar-item w3-button">Samsung</a>
-        <a href="#" class="w3-bar-item w3-button">Xiaomi</a>
-        <a href="#" class="w3-bar-item w3-button">Huawei</a>
-        <a href="#" class="w3-bar-item w3-button">Nokia</a>
-        <a href="#" class="w3-bar-item w3-button">Philips</a>
-      </div>
-      <a href="#" class="w3-bar-item w3-button">Aksesuarlar</a>
-      <a href="#" class="w3-bar-item w3-button">Smart saatlar</a>
-      <a href="#" class="w3-bar-item w3-button">Nömrələr</a>
-      <a href="#" class="w3-bar-item w3-button">Məişət texnikası</a>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     
     </div>
     <a href="#footer" class="w3-bar-item w3-button w3-padding">Əlaqə</a>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
@@ -97,8 +85,14 @@
     <div class="w3-hide-large" style="margin-top:83px"></div>
     <!-- Elan forumun yığılması -->
     <form class="Elan_form">
-      <label style="margin-left: 35%;font-size: 20px;">Elan məlumatlarını doldurun</label>
+      <label class="elan_text" style="margin-left: 20px ;font-size: 30px;">Elan məlumatlarını doldurun</label>
       <div class="elan" style="margin: 20px;">
+        <label for="fname" style="font-size: 20px;">Kateqoriyalar:</label><br>
+
+
+        <select id="select2" class="cusDD_arrow" style="font-size: 20px;">
+          <option>Mobil telefonlar</option>
+          <option>Aksessuarlar</option></select><br>
         <label for="fname" style="font-size: 20px;">Başlığı seçin:</label><br>
         <input type="text" id="fname" name="fname" placeholder="Post11"><br>
         <label for="fname" style="font-size: 20px;">Məhsul haqqında:</label><br>
@@ -156,25 +150,15 @@
         </select><br>
         <label for="fname" style="font-size: 20px;">Mobil nömrə:</label><br>
         <input type="number" id="fname" name="fname" placeholder="994519999999">
-
-        </select><br>
-        <label for="fname" style="font-size: 20px;">Kateqoriyalar:</label><br>
-
-
-        <select id="select2" class="cusDD_arrow" style="font-size: 20px;">
-          <option>2</option>
-          <option>4</option>
-          <option>5</option>
-
-        </select><br>
         <br>
         <br>
 
         <button type="submit" style="width: 100%;height: 50px; background: rgb(14, 224, 119);">Yüklə</button>
         <br>
         <br>
-      </div>
-    </form>
+      
+    </div>
+    
 
     <!-- İzlə bölməsi -->
     <div class="w3-container w3-black w3-padding-32">
@@ -257,7 +241,11 @@
 
   </div>
 
+  <script src="jquery-3.5.1.min.js"></script>
 
+
+  <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="elan.js"></script>
 </body>
 
 </html>
