@@ -5,6 +5,7 @@
 
 .w3-container1{
   width: 275px;
+  
 }
 
 
@@ -208,7 +209,7 @@
     font-family: 'Allerta Stencil', sans-serif;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
    *{
      padding: 0 0 !important;
    }
@@ -217,12 +218,12 @@
       flex-wrap: wrap ;
       justify-content: center ;
       align-items: center ;
-      padding-left: 30px !important;
+      padding-left: 40%px !important;
       
     }
     /*axirinci iki cardlari duzgun yerleshdirmek ucun*/
     #last_items{
-      margin-right: 92px; 
+      margin-right: 20%; 
     }
     
     .fa {
@@ -230,3 +231,15 @@
     }
   }
   
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .w3-col{
+      margin: 0 0 !important;
+      padding-left: 8%;
+    }
+    #last_items{
+      margin: 0 0 !important;
+      padding-left: 8%;
+    }
+    
+  }
