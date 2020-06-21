@@ -3,10 +3,7 @@
  
 }
 
-.w3-container1{
-  width: 275px;
-  
-}
+
 
 
 /*Search buttonu yuxarıdakı */
@@ -29,7 +26,7 @@
     
     
     input[type=text]:focus {
-    width: 620px;
+    width: 520px;
     transition: width 2s !important;
     
   }
@@ -88,7 +85,7 @@
     line-height: 1.6 ;
   }
   
-  .w3-container:hover{
+  .w3-container.details:hover{
         
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    transition: box-shadow 0.4s ease-in-out;
@@ -225,13 +222,7 @@
     padding: 0 40px;
        
   }
-  .w3-container{
-    align-items: center !important;
-   
-  }
-  
-
-
+ 
     .fa {
       padding-right: 4px !important;
     }
