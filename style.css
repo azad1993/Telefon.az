@@ -2,6 +2,34 @@
   text-decoration: none;
  
 }
+.search_advanced {
+  display: flex;
+  align-items: stretch;
+  
+}
+
+.search_advanced > div {
+  
+  text-align: center;
+  width: 10px !important;
+
+}
+.radio_button{
+ 
+  
+  margin-right: 15%;
+  
+  
+}
+.input {
+margin-left: 10%;
+
+}
+.currency2{
+ 
+}
+
+
 
 
 
@@ -26,14 +54,12 @@
     
     
     input[type=text]:focus {
-    width: 520px;
+    width: 100% !important;
     transition: width 2s !important;
     
-  }
+  }  
 
-  #ikinci_axtar {
-    width: 298px;
-  }
+ 
   
   input[type=text]:hover, input[type=number]:hover{
    
@@ -41,8 +67,12 @@
     transition: box-shadow 0.4s ease-in-out;
     border-color: black;
     
-    
   }
+
+  #ikinci_axtar {
+    width: 100% ;
+  }
+
   textarea:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: box-shadow 0.4s ease-in-out;
@@ -61,8 +91,9 @@
     font-size: 16px;
     background-color: rgb(46, 44, 44);
     color: white;
-    width: 100px;
+    
     display: inline-block;
+    
     
   }
   .btn2{
@@ -99,12 +130,12 @@
     color: white;
     padding: 16px;
     font-size: 16px;
-    width: 130px;
+    width: 95%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    width: auto;
+    
     padding: 5px 20px 5px 40px;
     background-color: white;
     cursor: pointer;
@@ -122,16 +153,20 @@
     position: relative;
     display: inline-block;
     line-height: 1.6 ;
+    
+    
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
+    margin-left: 2.5% ;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 95%;
   }
   
   .dropdown-content a {
@@ -139,6 +174,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1;}
@@ -161,14 +197,14 @@
 
 .has-search .form-control {
     padding-left: 2.375rem;
-    width: 297px;
-    margin-left: 5px ;
+    width: 97.5% !important;
+    
     
 }
 
 .has-search .form-control-feedback {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     display: inline-block;
     width: 3.100rem;
     height: 2.375rem;
@@ -214,18 +250,107 @@
    *{
      padding:  0 0 ;
    }
+   .w3-container {
+    display: flex;
+    flex-direction: column;
+  
+  }
+ 
+  .w3-right{
+    margin-right: 13% !important;
+  }
+  #search{
+    margin-left: 5%;
+  }
+ 
+  
 
-   .container {
+   .container , .search_advanced,.title,.currency,.component,.filter-controll__input,.radio_button,.veziyyeti,.chatdir,.goster,.baby1,.baby,.listing_feed,.currency2,.form-control,.btn{
     display: flex;
     flex-direction: column;
     align-items: center ;
-    padding: 0 40px;
-       
+    width: 100% !important;
+    
+    
   }
+  .w3-left{
+    width: 88% !important ;
+  }
+  .dropdown{
+    display: block !important;
+    width: 100% !important;
+    padding-right: 3%;
+   
+  }
+  .button{
+    padding: 0 12% 0 1% ;
+  }
+  .btn2,.goster{
+    width: 90% !important ;
+    display: block !important;
+    margin-left: 3% !important;
+    
+  }
+  
+  span{
+    margin: 0 0 !important;
+    Padding: 0 0 !important;
+    
+  }
+  .search_advanced > div {
+  
+    text-align: center;
+    width: 100% !important;
+    display: block !important;
+  
+  }
+  .search_advanced{
+    padding: 0 0 0 0 !important;
+  }
+  .dropbtn1 {
+    
+    margin: 5%;
+    
+    width: 89% !important;
+    box-sizing: border-box;
+   
+  }
+  #ikinci_axtar{
+    margin-bottom: 5%;
+    width: 100% !important;
+  }
+   .form-control{
+     width: 100% !important;
+     padding: 1.4% 45.5% !important ;
+   }
+   input[type=text]:focus {
+    width: 80% !important;
+    transition: none !important;
+    
+   }
+   input[type=text],input[type=number],.cusDD_arrow,.delivery{
+    width: 80% ;
+    height: 40px;
+    border-radius: 4px;
+   }
+
+   .delivery{
+   width: 100%;
+   margin-left: 20% !important;
+   }
+   .form-group{
+   padding-left: 5% !important;
+   padding-right: 8% !important;
+   }
+   .goster{
+     margin-top: 10%;
+     margin-left: 4% !important;
+   }
+   .btn{
+    margin-left: 5%;
+   }
  
-    .fa {
-      padding-right: 4px !important;
-    }
+    
   }
   
   @media (min-width: 768px) and (max-width: 1024px) {

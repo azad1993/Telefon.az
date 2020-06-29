@@ -89,19 +89,24 @@
         <input id="search" type="text" name="search" placeholder="Axtar..">
         <i class="fa fa-search"></i>
       </p>
-      <p class="w3-right">
-        <button class="btn" style="width: 106px;"><a href="Registration/registration.html">Qeydiyyat</button>
+      <p class="w3-right" >
+        <button class="btn" style="width: 100%;"><a href="Registration/registration.html">Qeydiyyat</button>
       </p>
       <p class="w3-right">
-        <button class="btn" style="width: 106px;"><a href="Login/index_login.html">Giriş</button>
+        <button class="btn" style="width: 100%;"><a href="Login/index_login.html">Giriş</button>
       </p>
       <p class="w3-right">
-        <button class="btn" style="width: 150px;"><a href="Elan/elan.html">Elanı yerləşdirin</button>
+        <button class="btn" style="width: 100%;"><a href="Elan/elan.html">Elanı yerləşdirin</button>
       </p>
     </header>
     <header class="w3-container w3-large">
     <form class="search_advanced">
-      <div class="dropdown" style="float:left;">
+      <div class="form-group has-search" style="flex-grow: 1;" >
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" id="ikinci_axtar"  class="form-control" placeholder="Axtar..">
+      </div>
+      
+      <div class="dropdown" style="flex-grow: 1;">
         
         <input class="dropbtn1" placeholder="Bütün kateqoriyalar">
         
@@ -110,16 +115,8 @@
           <a href="*">Telefon hissələri</a>
         </div>
       </div>
-      <div class="button" style="float:right;">
-
-        <button class="btn" style="width: 107px;">Axtar</button>
-      </div>
-      <div class="form-group has-search">
-        <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" id="ikinci_axtar" class="form-control" placeholder="Axtar..">
-      </div>
       
-      <div class="dropdown" style="float:right;">
+      <div class="dropdown" style="flex-grow: 1;">
         <input  class="dropbtn1" placeholder="Şəhəri daxil edin">
         
         <div class="dropdown-content" style="left:0;">
@@ -128,41 +125,50 @@
           <a href="*">Gəncə</a>
         </div>
       </div>
+      <div class="button" style="flex-grow: 1;">
+
+        <button class="btn" style="width: 95%;">Axtar</button>
+      </div>
       </form>
+    
       <br>
       <div class="search_advanced2" > 
-        <div class="listing_feed">
-          <span class="input range-type">
-            <div class="input range-row">
-              <br>
-              <label class="title" style="margin-left: 10px;">Qiymət</label>
-              <label class="currency" style="margin-left: 268px;">Valyuta</label>
-              <label class="component" style="margin-left: 188px;">Vəziyyəti</label>
-            </div>
-            <span class="input range-row">
-              <span class="min_price" style="margin-left: 10px;">
-                <input type="number" class="filter-controll__input" min="0" max="9999999999" placeholder="Min qiymət " value="">
-              </span>
-              <span class="max_price" style="margin-left: 10px;">
-                <input type="number" class="filter-controll__input" min="0" max="9999999999" placeholder="Maks qiymət" value="">
-              </span>
-            </span>
-          </span>
-          <span class="currency">
+        <div class="listing_feed">    
+              <span class="title" style="margin-left: 10px; order: 1;">Qiymət</span>
+              <span class="currency" style="margin-left: 268px; order: 3;">Valyuta</span>
+              <span class="component" style="margin-left: 188px; order: 5;">Vəziyyəti</span>
             
-              <span class="toggle" style="margin-left: 60px;">
-              <span class="radio_button">
-                <input type="radio" class="filter-controll__input" name="currency" id="AZN" checked="">
+            <span class="input range-row" style="order: 2;" >
+              <br>
+              <span class="min_price" >
+                <input type="number" class="filter-controll__input"  min="0" max="9999999999" placeholder="Min qiymət " value="">
+              </span>
+              <br>
+              <span class="max_price" >
+                <input type="number" class="filter-controll__input"  min="0" max="9999999999" placeholder="Maks qiymət" value="">
+                <br>
+              </span>
+           
+            </span>
+          <span class="currency2" style="order: 4;">
+              
+              
+              <br>
+              <span class="radio_button" style="order: 4;">
+                <input type="radio" class="filter-controll__input" name="currency2" id="AZN" checked="">
                 <label class="filter-controll__radio-label" for="choice1">AZN</label>
               </span>
-              <span class="radio_button">
-                <input type="radio" class="filter-controll__input" name="currency" id="USD">
+             
+              <span class="radio_button" style="order: 4;">
+                <input type="radio" class="filter-controll__input" name="currency2" id="USD">
                 <label class="filter-controll__radio-label" for="choice2">USD</label>
+                <br>
               </span>
               
             </span>
           
-            <span class="veziyyeti" style="margin-left: 145px;">
+            <span class="veziyyeti" style="margin-left: 145px;order: 6;">
+              <br>
             <select id="select2" class="cusDD_arrow">
               <option>Yeni</option>
               <option>İşlənmiş</option>
@@ -173,28 +179,33 @@
             
           
           
-         <div class="chatdir" style="margin-left: 10px;">
+         <div class="chatdir" style="margin-left: 10px;order: 7;">
           <br>
            Çatdırılma
          </div>
-          <div class="delivery" style="margin-left: 10px;">
+         
+          <div class="delivery" style="margin-left: 10px; order: 7;">
             <span class="cusDD_select" >
+              <br>
               <select id="select2" class="cusDD_arrow">
               <option>Çatdırılma ilə</option>
               <option>Metrolara Çatdırılma</option>
               <option>Pulsuz çatdırılma</option>
               <option>Ödənişli çatdırılma</option>
               </select>
+              
           </div>
-          <div class="goster">
+          <div class="goster" style="order: 8;">
+            <br>
             <button type="button" class="btn2" style="width: 27.5%; margin-left: 71%;" >Göstər</button>
+            <br>
           </div>
           <br>
           
         </div>
         </div>
         <br>
-       
+    
   </header>
             <!-- Şəkil başlıq -->
             <div class="w3-display-container w3-container">

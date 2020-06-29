@@ -36,6 +36,8 @@ function myAccFunc1() {
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
+    document.getElementsByClassName("carousel-indicators").style.display = "none";
+    
   }
    
   function w3_close() {
