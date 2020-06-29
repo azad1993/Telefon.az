@@ -8,26 +8,20 @@
   
 }
 
+
+
+
+
 .search_advanced > div {
   
   text-align: center;
   width: 10px !important;
 
 }
-.radio_button{
- 
-  
-  margin-right: 15%;
-  
-  
-}
-.input {
-margin-left: 10%;
 
-}
-.currency2{
- 
-}
+
+
+
 
 
 
@@ -353,7 +347,7 @@ margin-left: 10%;
     
   }
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media  (min-width: 768px)  {
    
     
     .container {
@@ -363,5 +357,66 @@ margin-left: 10%;
       
                    
     }
+    .listing_feed,.search_advanced2{
+      display: flex;
+      
+      flex-wrap: wrap;
+      align-content: space-between;
+    
+    }
+    .listing_feed > span {
+      
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+     
+    
+    }
+
+    .currency{
+      order: 2 !important;
+     
+
+    }
+
+    
+    .component{
+      order: 3 !important;
+      margin-left: 30% !important;
+
+    }
+    .input{
+      order: 4 !important;
+      margin-top: 0 !important;
+    }
+    .currency2 {
+      order: 5 !important;
+      width: 66% !important;
+      
+    }
+    .veziyyeti {
+      order: 6 !important;
+      
+      margin-left: 3% !important;
+    }
+    .chatdir {
+      width: 100% !important;
+      margin-left: 25px !important;
+      
+    }
+    .goster{
+      order: 7 !important;
+      display: inline-block !important;
+      width: 75% !important; 
+      margin-bottom: 3% !important;
+      
+    }
+    .btn2{
+      margin-left: 55% !important;
+      width: 40% !important;
+    }
+    
+    
    
   }
+  
