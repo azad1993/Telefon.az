@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<title>Telefon.az</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link
+    href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Allerta+Stencil&family=Archivo+Black&family=Asap:ital,wght@1,500&family=DM+Mono:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="Login/index_login.html">
+
+
+<body class="w3-content" style="max-width:1200px">
+
+    <!-- Sol menyu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+            <h3 class="w3-wide"><a href="indexmain.html"><b>NANOTEL</b></a></h3>
+            <%= test %>
+
+        </div>
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+
+            <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtn">
+                Mobil telefonlar <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                        class="fa fa-caret-right w3-margin-right"></i>Hamısı</a>
+                <a href="#" class="w3-bar-item w3-button">Apple</a>
+                <a href="#" class="w3-bar-item w3-button">Hp</a>
+                <a href="#" class="w3-bar-item w3-button">Asus</a>
+                <a href="#" class="w3-bar-item w3-button">Acer</a>
+                <a href="#" class="w3-bar-item w3-button">Lenovo</a>
+
+            </div>
+
+            <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtn">
+                Aksessuarlar <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                        class="fa fa-caret-right w3-margin-right"></i>Hamısı</a>
+                <a href="#" class="w3-bar-item w3-button">Apple</a>
+                <a href="#" class="w3-bar-item w3-button">Acer</a>
+                <a href="#" class="w3-bar-item w3-button">Lenovo</a>
+                <a href="#" class="w3-bar-item w3-button">Samsung</a>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Əlaqə</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
+            onclick="document.getElementById('newsletter').style.display='block'">Xəbərlər</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Təmir</a>
+    </nav>
+
+    <!-- Navbar telefon görünüşündə -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide"><a href="indexmain.html">NANOTEL</a></div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+                class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Sol menyunu telefonda işlədərkən bağlamaq üçün -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Səhifənin məzmunu -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <!-- Telefon rejimində menyu -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Header -->
+        <header class="w3-container w3-xlarge">
+            <p class="w3-left">
+                <input id="search" type="text" name="search" placeholder="Axtar..">
+                <i class="fa fa-search"></i>
+            </p>
+            <p class="w3-right">
+                <button class="btn" style="width: 100%;"><a href="Registration/registration.html">Qeydiyyat</button>
+            </p>
+            <p class="w3-right">
+                <button class="btn" style="width: 100%;"><a href="Login/index_login.html">Giriş</button>
+            </p>
+            <p class="w3-right">
+                <button class="btn" style="width: 100%;"><a href="elan/">Elanı yerləşdirin</button>
+            </p>
+        </header>
+        <header class="w3-container w3-large">
+            <form class="search_advanced">
+                <div class="form-group has-search" style="flex-grow: 1;">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" id="ikinci_axtar" class="form-control" placeholder="Axtar..">
+                </div>
+
+                <div class="dropdown" style="flex-grow: 1;">
+
+                    <input class="dropbtn1" placeholder="Bütün kateqoriyalar">
+
+                    <div class="dropdown-content" style="left:0;">
+                        <a href="*">Telefonlar</a>
+                        <a href="*">Telefon hissələri</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" style="flex-grow: 1;">
+                    <input class="dropbtn1" placeholder="Şəhəri daxil edin">
+
+                    <div class="dropdown-content" style="left:0;">
+                        <a href="*">Bakı</a>
+                        <a href="*">Sumqayıt</a>
+                        <a href="*">Gəncə</a>
+                    </div>
+                </div>
+                <div class="button" style="flex-grow: 1;">
+
+                    <button class="btn" style="width: 95%;">Axtar</button>
+                </div>
+            </form>
+
+            <br>
+            <div class="search_advanced2">
+                <div class="listing_feed">
+                    <span class="title" style="margin-left: 10px; order: 1;">Qiymət</span>
+                    <span class="currency" style="margin-left: 268px; order: 3;">Valyuta</span>
+                    <span class="component" style="margin-left: 188px; order: 5;">Vəziyyəti</span>
+
+                    <span class="input range-row" style="order: 2;">
+                        <br>
+                        <span class="min_price">
+                            <input type="number" class="filter-controll__input" min="0" max="9999999999"
+                                placeholder="Min qiymət " value="">
+                        </span>
+                        <br>
+                        <span class="max_price">
+                            <input type="number" class="filter-controll__input" min="0" max="9999999999"
+                                placeholder="Maks qiymət" value="">
+                            <br>
+                        </span>
+
+                    </span>
+                    <span class="currency2" style="order: 4;">
+
+
+                        <br>
+                        <span class="radio_button">
+                            <input type="radio" class="filter-controll__input" name="currency2" id="AZN" checked="">
+                            <label class="filter-controll__radio-label" for="choice1">AZN</label>
+                        </span>
+
+                        <span class="radio_button">
+                            <input type="radio" class="filter-controll__input" name="currency2" id="USD">
+                            <label class="filter-controll__radio-label" for="choice2">USD</label>
+                            <br>
+                        </span>
+
+                    </span>
+
+                    <span class="veziyyeti" style="margin-left: 145px;order: 6;">
+                        <br>
+                        <select id="select2" class="cusDD_arrow">
+                            <option>Yeni</option>
+                            <option>İşlənmiş</option>
+
+                        </select>
+
+                    </span>
+
+
+
+                    <div class="chatdir" style="margin-left: 10px;order: 7;">
+                        <br>
+                        Çatdırılma
+                    </div>
+
+                    <div class="delivery" style="margin-left: 10px; order: 7;">
+                        <span class="cusDD_select">
+                            <br>
+                            <select id="select2" class="cusDD_arrow">
+                                <option>Çatdırılma ilə</option>
+                                <option>Metrolara Çatdırılma</option>
+                                <option>Pulsuz çatdırılma</option>
+                                <option>Ödənişli çatdırılma</option>
+                            </select>
+
+                    </div>
+                    <div class="goster" style="order: 8;">
+                        <br>
+                        <button type="button" class="btn2" style="width: 27.5%; margin-left: 71%;">Göstər</button>
+                        <br>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+            <br>
+
+        </header>
+        <!-- Şəkil başlıq -->
+        <div class="w3-display-container w3-container">
+            <img src="images/black-iphone-7-on-brown-table-699122.jpg" alt="Jeans" style="width:100%">
+            <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+                <h1 class="w3-jumbo w3-hide-small">Yeni gələnlər</h1>
+                <h1 class="w3-hide-large w3-hide-medium">Yeni gələnlər</h1>
+                <h1 class="w3-hide-small">2020 model</h1>
+                <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SƏBƏTƏ AT</a></p>
+            </div>
+
+
+            <p class="paragraph" style="height: 20px ;"></p>
+
+
+            <!-- Məhsullar -->
+            <div class="container">
+                <div class="w3-container details"><a href="elan/1">
+                        <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
+                        <p class="details_p"> Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                    </a>
+                </div>
+                <div class="w3-container details"><a href="elan/2">
+                        <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
+                        <p class="details_p"> Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                    </a>
+                </div>
+                <div class="w3-container details"><a href="elan/3">
+                        <img src="images/black-iphone-7-on-brown-table-699122.jpg" style="width:100%">
+                        <p class="details_p"> Apple iPhone 11 Pro Max 256GB<br><b>800 AZN</b></p>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- İzlə bölməsi -->
+            <div class="w3-container w3-black w3-padding-32">
+                <h1>Bizi izlə</h1>
+                <p>Xüsusi təkliflər və endirimlərdən xəbərdar olmaq üçün:</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="E-poçtunuzu daxil edin"
+                        style="width:100%">
+                </p>
+                <button type="button" class="w3-button w3-red w3-margin-bottom">İzlə</button>
+            </div>
+
+            <%- include ("../partials/footer") %>
+        </div>
+    </div>
+
+    <!-- Xəbərlər bölməsi -->
+    <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+                <i onclick="document.getElementById('newsletter').style.display='none'"
+                    class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                <h2 class="w3-wide">XƏBƏRLƏR</h2>
+                <p>BİZİM SƏHİFƏYƏ QOŞULUN.</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="E-potunuzu daxil edin"></p>
+                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+                    onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+
+</html>
