@@ -14,7 +14,18 @@ app.listen(3000);
 // ROUTES
 const indexRoute = require('./routes/index');
 const elanRoute = require('./routes/elan');
+const detailsRoute = require('./routes/details');
+const loginRoute = require('./routes/javascript_login');
+const registrationRoute = require('./routes/registration');
+const registration2Route = require('./routes/registration2');
+const registration3Route = require('./routes/registration3');
+
 
 // ROUTES MIDDLEWARES
 app.use('', indexRoute);
 app.use('/elan', elanRoute);
+app.use('/details', detailsRoute);
+app.use('/javascript_login', loginRoute);
+app.use('/registration', registrationRoute);
+app.use('/registration2', registration2Route);
+app.use('/registration3', registration3Route);

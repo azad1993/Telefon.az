@@ -1,5 +1,4 @@
 
-
 *{
     text-decoration: none;
 }
@@ -7,6 +6,7 @@ a:hover {
     text-decoration:none;
     color: black;
 }
+
 a{
     color: black;
 }
@@ -36,6 +36,7 @@ button{
     font-size: 20px;
     border: 2px solid #ccc;
 }
+
 button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: box-shadow 0.4s ease-in-out;
@@ -53,3 +54,4 @@ button:hover{
         padding-right: 4px !important;
       }
 }
+

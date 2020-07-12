@@ -4,19 +4,13 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    data = {
-        test: 'elan sehifesi'
+    const data = {
+        test: 'details sehifesi'
     }
-    res.render('pages/elan', data);
+    res.render('pages/details', data);
 });
 
-router.get('/:nomre', (req, res) => {
-    data = {
-        test: 'elan sehifesi ' + req.params.nomre,
 
-    }
-    res.render('pages/index', data);
-});
 
 router.post('/', async (req, res) => {
     console.log('---');
