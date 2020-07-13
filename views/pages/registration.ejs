@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registration.css">
-    
-   
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/registration.css">
+
+
+  <title>Document</title>
 </head>
 
 <body>
   <h2 style="text-align: center;">Qeydiyyat formu</h2>
+  <% if (message.length > 0) { %>
+  nese
+  <% } %>
 
-  <form action="registration2" method="post">
+
+  <form action="" method="post">
     <div class="imgcontainer">
-     
+
     </div>
-  
+
     <div class="container">
       <label for="uname"><b>Mobil nömrə</b></label>
-      <input type="text" placeholder="+99450......." name="uname" required>
-  
-      
-          
-      <button type="submit"><a href="registration2" style="color: white;">SMS kodu əldə et</a></button>
-     
+      <input type="text" placeholder="+99450......." name="phone" required>
+
+
+
+
+      <button type="submit">SMS kodu əldə et</button>
+
     </div>
-  
+
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" class="cancelbtn"><a href="/" style="color: white;">Çıxış</a></button>
-      
+
     </div>
   </form>
   <script type="text/javascript" src="js/javascript_login.js"></script>
 </body>
+
 </html>

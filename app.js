@@ -11,6 +11,11 @@ app.set('view engine', 'ejs');
 
 app.listen(3000);
 
+// EXTRACT FORM DATA
+app.use(express.urlencoded({
+    extended: true
+}))
+
 // ROUTES
 const indexRoute = require('./routes/index');
 const elanRoute = require('./routes/elan');
