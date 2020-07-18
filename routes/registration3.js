@@ -13,16 +13,17 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
     console.log('---', req.body);
-    const { phone } = req.body;
-    const url = 'http://127.0.0.1:8000/api/v1/';
+    const { phone ,password, fullname, gender} = req.body;
+    const url = 'http://127.0.0.1:8000/api/v1/users/register/';
     const settings = {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ phone }),
+        body: JSON.stringify({ phone ,password, fullname, gender }),
     }
+    
     try {
         const adsPromise = await fetch(url, settings);
         const adsResponse = await adsPromise.json();
@@ -36,12 +37,13 @@ router.post('/', async (req, res) => {
 
 
         } else {
-            console.log('alinmdai', adsResponse.detail);
+            console.log('alinmadi', adsResponse.detail);
             data = {
                 message: adsResponse.detail
             }
             res.render('pages/registration3', data);
         }
+        
     } catch (error) {
         throw error;
     }

@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
     console.log('---', req.body);
-    const {  } = req.body;
+    const { number, password } = req.body;
     const url = 'http://127.0.0.1:8000/api/v1/users/login/';
     const settings = {
         method: 'POST',
@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({  }),
+        body: JSON.stringify({ number,password  }),
     }
     try {
         const adsPromise = await fetch(url, settings);
